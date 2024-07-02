@@ -23,8 +23,6 @@ CypressRails.hooks.before_server_start do
     quantity: 18,
     price: 24.99
   })
-
-  Rails.logger.info "Created Products: #{cat1.products.count} - #{product1.name}, #{product2.name}"
 end
 
 CypressRails.hooks.after_transaction_start do
