@@ -9,7 +9,7 @@ Integrated Strype payments
 
 ## Screenshots
 !["Main screen of the app"](https://github.com/baovevni/jungle-rails/blob/master/docs/main-screen.png)
-!["Products page with Sold Out stamp"](https://github.com/baovevni/jungle-rails/blob/master/docs/products-page-with-sold-out)
+!["Products page with Sold Out stamp"](https://github.com/baovevni/jungle-rails/blob/master/docs/products-page-with-sold-out.png)
 !["Register Screen"](https://github.com/baovevni/jungle-rails/blob/master/docs/register-screen.png)
 !["Admin Dashboard"](https://github.com/baovevni/jungle-rails/blob/master/docs/admin-dashboard.png)
 !["Admin Products"](https://github.com/baovevni/jungle-rails/blob/master/docs/admin-products.png)
