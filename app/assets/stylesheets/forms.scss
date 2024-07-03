@@ -1,0 +1,57 @@
+/* app/assets/stylesheets/forms.css */
+
+/* General form container styling */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto; /* Center the form */
+  padding: 1em;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style error messages */
+.error-messages {
+  background: #f8d7da; /* Light red background */
+  border: 1px solid #f5c2c7; /* Red border */
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  color: #842029; /* Dark red text */
+}
+
+/* Style the form fields */
+.field {
+  margin-bottom: 1em;
+}
+
+.field label {
+  margin-bottom: .5em;
+  color: #333;
+  display: block;
+}
+
+.field .form-input {
+  border: 1px solid #ccc;
+  padding: .5em;
+  font-size: 1em;
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the form submit button */
+.actions .form-submit {
+  padding: 0.7em;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1em;
+}
+
+.actions .form-submit:hover {
+  background-color: #0056b3;
+}

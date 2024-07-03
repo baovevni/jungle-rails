@@ -30,14 +30,15 @@ class OrdersController < ApplicationController
     Stripe::Charge.create(
       source:      params[:stripeToken],
       amount:      cart_subtotal_cents,
-      description: "Khurram Virani's Jungle Order",
-      currency:    'cad'
+      description: "Order from #{current_user&.email || 'Guest user'}", # Uses 'Guest user' if current_user.email is nil or empty
+      currency:    'cad',
+      # receipt_email: current_user&.email || "No email provided" # Sets "No email provided" if current_user.email is nil or empty
     )
   end
 
   def create_order(stripe_charge)
     order = Order.new(
-      email: params[:stripeEmail],
+      email: current_user&.email || 'Guest user', # Use the current user's email
       total_cents: cart_subtotal_cents,
       stripe_charge_id: stripe_charge.id, # returned by stripe
     )
